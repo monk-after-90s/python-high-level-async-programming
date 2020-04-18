@@ -15,3 +15,4 @@
 ![启动python -m asyncio](https://github.com/monk-after-90s/python-high-level-async-programming/blob/master/%E6%95%99%E5%AD%A6%E7%A8%8B%E5%BA%8F/%E5%90%AF%E5%8A%A8-m%20asyncio.png)
 ## 开始学习
 首先给Python3.8安装以下库:aiohttp、requests，然后看下面的视频
+[![学习部分](https://github.com/monk-after-90s/python-high-level-async-programming/blob/master/%E6%95%99%E5%AD%A6%E7%A8%8B%E5%BA%8F/%E5%AD%A6%E4%B9%A0%E9%83%A8%E5%88%86%E7%9A%84%E5%B0%81%E9%9D%A2.png)](https://www.bilibili.com/video/BV1XQ4y1K7Qw/)
