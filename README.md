@@ -1,6 +1,6 @@
 by 90后老和尚
 
-建议学习路线：README-->交互式教学-->trick to asynchronously import
+建议学习路线：README-->交互式教学-->实战教学-->trick to asynchronously import
 ## 从函数说起（Python3.7及以上）（这一步主要是建立一切皆是对象的概念）:
 #### 在Python里，一切皆是对象，不存在称作过程的东西。函数例如:
 ```python
