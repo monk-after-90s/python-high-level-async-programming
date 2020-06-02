@@ -1,6 +1,6 @@
 by 90后老和尚
 
-建议学习路线：README-->交互式教学-->实战教学-->trick to asynchronously import
+建议学习路线：README-->交互式教学-->实战教学-->进阶教学-->trick to asynchronously import
 ## 从函数说起（Python3.7及以上）（这一步主要是建立一切皆是对象的概念）:
 #### 在Python里，一切皆是对象，不存在称作过程的东西。函数例如:
 ```python
@@ -148,8 +148,8 @@ by 90后老和尚
 ```python
     await asyncio.create_task(asyncio.sleep(1))
 ```
-### for的陷阱
-#### 使用for提交协程有一个陷阱。运行:
+### 闭包的陷阱
+#### 使用闭包跨作用域使用变量有一个陷阱。例如运行:
 ```python
     async def main():
         tasks = []  # 搜集task的列表
@@ -170,12 +170,12 @@ by 90后老和尚
     0
     1
     2
-#### 对于for里面的易变的变量不能直接在协程内跨作用域使用它，而应该通过协程函数的参数传递它的值来锚定它(除非你就是想达到上面的效果)：
+#### 如果你不能很好的控制会发生改变的变量，那就不要在协程内跨作用域使用它，而应该通过协程函数的参数传递它的值来锚定它(除非你就是想达到上面的效果)：
 ```python
     async def main():
         tasks = []  # 搜集task的列表
         for i in range(3):
-            async def coro(i=i):
+            async def coro(i=i):#参数传值
                 return i
     
             tasks.append(asyncio.create_task(coro()))
